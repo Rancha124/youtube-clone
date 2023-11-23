@@ -1,0 +1,53 @@
+div {
+  /* color: #0000006d; */
+}
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Customize the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: #959595; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Rounded corners for the thumb */
+  margin: 2px 4px;
+}
+
+/* Change the color when hovering over the scrollbar thumb */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #717171;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f; /* Change this color to the desired color */
+}
+
+.youtube-video {
+  width: 860px;
+  height: 485px;
+}
+
+/* Hide scrollbar on mobile screens */
+@media (max-width: 767px) {
+  .youtube-video {
+    width: 100%;
+    height: 300px;
+  }
+  .hidden-scrollbar {
+    overflow-x: auto;
+    /* hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* hide scrollbar for chrome, safari and opera */
+  .hidden-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px; /* Width of the scrollbar */
+  }
+}
