@@ -1,6 +1,6 @@
 # Youtube-clone in ReactJS ⚛️
 
-![Screenshot of the Application](https://github.com/Rancha124/youtube-clone/assets/116198388/4a531cfe-7add-4ede-8e9b-5bd98a546101)
+![Screenshot of the Application](https://github.com/Rancha124/youtube-clone/assets/home_screen.png)
 
 ## Table of content 📝
 1. Features
