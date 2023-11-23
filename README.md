@@ -1,4 +1,4 @@
-# Youtube-clone [Live](https://youtube-clone-shivraj.vercel.app) - Best Youtube clone in ReactJS ⚛️
+# Youtube-clone in ReactJS ⚛️
 
 ![Screenshot of the Application](https://github.com/Rancha124/youtube-clone/assets/116198388/4a531cfe-7add-4ede-8e9b-5bd98a546101)
 
@@ -111,11 +111,10 @@ To fetch YouTube data, you'll need the following `API_KEYS`. Follow these steps 
 Once you have your API keys, proceed with the following:
 
 3. Create a `.env` file in the `root` directory of your project.
-4. Place your API key values in the `.env` file as shown below. Note that I've included two Google API keys as backups in case one exceeds its usage limits.
+4. Place your API key values in the `.env` file as shown below. 
 
 ```sh
-REACT_APP_YOUTUBE_API_KEY_GOOGLE1=YOUR_API_KEY
-REACT_APP_YOUTUBE_API_KEY_GOOGLE2=YOUR_API_KEY
+REACT_APP_YOUTUBE_API_KEY_GOOGLE=YOUR_API_KEY
 REACT_APP_YOUTUBE_API_KEY_RAPIDAPI=YOUR_API_KEY
 ```
 
@@ -134,40 +133,19 @@ npm start
 
 Open your web browser and go to [http://localhost:3000](http://localhost:3000) to view the project.
 
-That's it! You're now ready to explore the project locally.
-
-Happy coding! 🚀
-
-<div align="center">
-  <h4>⭐️If you've found value in this, a star would be a wonderful way to say thanks..</h4>
-</div>
+That's it! Happy coding! 🚀
 
 
 ## 4. Understand Context API 🧠 
 
-`YoutubeContext.js` is a context module designed to simplify the management of YouTube data in your React application. It leverages the power of React's Context API to provide a centralized state and functions for fetching and handling YouTube data.
+`YoutubeContext.js` module is created to streamline the handling of YouTube data within your React application. It utilizes React's Context API to establish a centralized state and methods, making it easier to manage and fetch YouTube-related information.
 
 Key Features:
 
-- Fetch trending videos based on country code.
-- Perform autocomplete suggestions for search queries.
-- Retrieve search results for videos based on user queries.
-- Efficiently handle API calls and loading states.
-- I have incorporated a second API for generateAutocomplete suggestions due to the first API's lack of mobile screen support. However, the first API offers unlimited access on 
-   desktop, which is why I decided to utilize both.
-- For the functions getSearchVideos and getTrendingVideo, I implemented the second API as a backup. This arrangement ensures that when the first API exceeds its usage limit, 
-  the second API can seamlessly take over and provide uninterrupted service. This approach enhances the reliability of the application and provides a smooth user experience.
-
-
-## 5. How to Contribute 🤝 
-
-Thank you for considering contributing to this project! Your contributions make a real difference and help improve this project for everyone. Here are a few ways you can get involved:
-
-- **Report Bugs:** If you come across any bugs or issues, please [open an issue](https://github.com/Rancha124/youtube-clone/issues) to let us know. Be sure to provide as much detail as possible.
-- **Suggest Enhancements:** Have an idea to make this project even better? Feel free to [create an issue](https://github.com/iamshiv007/youtube-clone/issues) to share your enhancement suggestions.
-- **Submit Pull Requests:** If you're technically inclined, you can submit a pull request with code changes. Make sure to follow our coding guidelines and explain the purpose of your pull request.
-- **Spread the Word:** If you love this project, a simple star or sharing it with others can make a big difference.
-- **Provide Feedback:** Your feedback is invaluable! Share your thoughts, experiences, or ideas by [email](mailto:softdev.shivraj@gmail.com).
-
-We value every contribution, big or small, and appreciate your support in making this project better for the entire community. Thank you for being a part of it!
-
+- Retrieve popular videos based on the country code.
+- Provide auto-complete suggestions for search queries.
+- Get search results for user-entered video queries.
+- Manage API calls and loading states efficiently.
+- To support mobile screen compatibility lacking in the initial API, 
+I've integrated a secondary API for generating autocomplete suggestions. Although the first API has unlimited access on desktop, I opted to utilize both due to these differences.
+- In functions such as getSearchVideos and getTrendingVideo, I've integrated the second API as a backup. This setup ensures uninterrupted service by seamlessly shifting to the second API when the first one reaches its usage limit. This strategy boosts application reliability and offers users a smoother experience.
